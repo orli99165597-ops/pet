@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>힐링펫라이프 - 프리미엄 펫튜브</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        @font-face {
+            font-family: 'GmarketSansMedium';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: 'GmarketSansMedium', sans-serif;
+            background-color: #fcfcfc;
+            color: #1a1c1e;
+        }
+        .text-wine { color: #800020; }
+        .bg-wine { background-color: #800020; }
+        .border-wine { border-color: #800020; }
+        .text-gold { color: #d4af37; }
+        .bg-gold { background-color: #d4af37; }
+        .neon-glow {
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.3), 0 0 40px rgba(128, 0, 32, 0.2);
+        }
+        .wine-gradient {
+            background: linear-gradient(135deg, #800020 0%, #4a0012 100%);
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #d4af37 0%, #aa8c2c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm">
+<div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+<div class="text-2xl font-bold text-wine flex items-center gap-2">
+<span class="text-3xl">🐾</span> Healing Pet Life
+            </div>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="text-wine font-bold border-b-2 border-wine pb-1" href="#">홈</a>
+<a class="text-gray-600 hover:text-wine transition-colors font-medium" href="#categories">카테고리</a>
+<a class="text-gray-600 hover:text-wine transition-colors font-medium" href="#stats">소개</a>
+<a class="text-gray-600 hover:text-wine transition-colors font-medium" href="#faq">FAQ</a>
+<button class="bg-wine text-white px-6 py-2.5 rounded-full hover:bg-opacity-90 transition-all font-bold shadow-md hover:shadow-lg flex items-center gap-2">
+<span class="text-gold">★</span> 구독하기
+                </button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="pt-32 pb-20 px-6 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/2 h-full bg-wine/5 rounded-bl-[10rem] -z-10"></div>
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+<div class="space-y-8 relative z-10">
+<div class="inline-flex items-center gap-2 bg-white border border-gray-200 text-wine px-5 py-2 rounded-full text-sm font-semibold shadow-sm">
+<span class="animate-pulse">✨</span> 프리미엄 펫 유튜브 채널
+                </div>
+<h1 class="text-5xl md:text-6xl font-bold leading-tight text-gray-900">
+                    우리의 하루는 <br/>
+                    반려동물과 함께 <br/>
+<span class="text-wine relative">
+                        더 특별해진다
+                        <svg class="absolute w-full h-3 -bottom-1 left-0 text-gold/30" preserveaspectratio="none" viewbox="0 0 100 10"><path d="M0 5 Q 50 10 100 5" fill="none" stroke="currentColor" stroke-width="4"></path></svg>
+</span>
+</h1>
+<p class="text-lg text-gray-600 max-w-lg leading-relaxed">
+                    힐링펫라이프와 함께하는 소중한 우리 아이들의 따뜻한 일상 이야기. 전문가의 팁부터 힐링 모먼트까지, 완벽한 반려생활을 위한 모든 것을 만나보세요.
+                </p>
+<div class="flex gap-4">
+<button class="wine-gradient text-white px-8 py-4 rounded-full text-lg font-bold flex items-center gap-2 hover:-translate-y-1 transition-transform shadow-lg shadow-wine/30">
+                        유튜브 채널 구경가기 
+                        <svg class="h-5 w-5 text-gold" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+</svg>
+</button>
+<button class="bg-white border-2 border-gray-200 text-gray-700 px-8 py-4 rounded-full text-lg font-bold hover:border-wine hover:text-wine transition-colors flex items-center gap-2">
+                        ▶ 미리보기
+                    </button>
+</div>
+</div>
+<div class="relative">
+<div class="absolute inset-0 bg-gold/20 blur-3xl rounded-full transform -translate-x-5 translate-y-10"></div>
+<div class="relative rounded-[3rem] overflow-hidden border-8 border-white neon-glow transform md:rotate-2 hover:rotate-0 transition-transform duration-500">
+<img alt="반려견 힐링 이미지" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPWKNzaNqfzYWoqpN3q4WMZiBN9xvRNfkEjDZdVnMtVobcEzik0mAbl7cCrj3X5TgyTbRJnddFiRRkt5wuprAi1q0txeLOnwmvlO-M88t1hjgYmVcDSlN8AyCV3X1AhnOX3ZpONRx5dKMgT4b-EYek6r8s21C8cBjuu9R5eH4J2oNbX3LhxjOjrF2urpCwUhDZ7LGesqhq73TgBlpzdJEudS34VI9WpvTV4FUHfAbV4BxbPC-vTDdqLASeZKhQPDoEwc_8WB-6nrqu"/>
+<!-- Overlay Badge -->
+<div class="absolute bottom-6 left-6 bg-white/95 backdrop-blur-sm p-4 rounded-2xl flex items-center gap-4 shadow-xl border border-gray-100">
+<div class="bg-wine/10 p-3 rounded-xl">
+<span class="text-2xl">❤️</span>
+</div>
+<div>
+<div class="text-xs text-gray-500 font-medium">구독자 행복지수</div>
+<div class="font-bold text-wine text-xl flex items-baseline gap-1">
+                                99.9<span class="text-sm text-gray-400">%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats & Trust Section -->
+<section class="py-16 border-y border-gray-100 bg-white" id="stats">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-gray-100">
+<div class="px-4">
+<div class="text-4xl font-bold text-wine mb-2">150K+</div>
+<div class="text-gray-500 font-medium text-sm">구독자 수</div>
+</div>
+<div class="px-4">
+<div class="text-4xl font-bold text-wine mb-2">3.2M</div>
+<div class="text-gray-500 font-medium text-sm">월간 조회수</div>
+</div>
+<div class="px-4">
+<div class="text-4xl font-bold text-wine mb-2">500+</div>
+<div class="text-gray-500 font-medium text-sm">업로드된 영상</div>
+</div>
+<div class="px-4">
+<div class="text-4xl font-bold text-wine mb-2">4.9/5</div>
+<div class="text-gray-500 font-medium text-sm">시청자 평점</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Detailed Categories Section -->
+<section class="py-24 bg-gray-50" id="categories">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<div class="text-gold font-bold mb-3 tracking-wider text-sm">OUR CONTENTS</div>
+<h2 class="text-3xl md:text-4xl font-bold mb-6">다양한 카테고리로 만나는 <span class="text-wine">힐링</span></h2>
+<p class="text-gray-600 max-w-2xl mx-auto text-lg">
+                    반려동물과의 행복한 삶을 위한 모든 정보를 제공합니다. 당신에게 필요한 맞춤형 콘텐츠를 찾아보세요.
+                </p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Category 1 -->
+<div class="bg-white p-10 rounded-[2.5rem] shadow-sm border border-gray-100 hover:-translate-y-2 transition-transform duration-300 group">
+<div class="w-16 h-16 bg-wine/5 rounded-full flex items-center justify-center text-3xl mb-8 group-hover:bg-wine group-hover:text-white transition-colors">
+                        🎓
+                    </div>
+<h3 class="text-2xl font-bold mb-4 text-gray-900">전문가 교육/훈련</h3>
+<p class="text-gray-500 mb-6 leading-relaxed">
+                        행동 교정부터 기본 예절 훈련까지. 수의사와 전문 훈련사가 직접 알려주는 올바른 양육 가이드를 제공합니다. 초보 반려인도 쉽게 따라할 수 있어요.
+                    </p>
+<ul class="space-y-3 text-sm font-medium text-gray-600">
+<li class="flex items-center gap-2"><span class="text-gold">✓</span> 강아지/고양이 행동학</li>
+<li class="flex items-center gap-2"><span class="text-gold">✓</span> 연령별 맞춤 훈련법</li>
+<li class="flex items-center gap-2"><span class="text-gold">✓</span> 사회화 교육 실전 가이드</li>
+</ul>
+</div>
+<!-- Category 2 -->
+<div class="bg-white p-10 rounded-[2.5rem] shadow-lg border-2 border-wine/10 hover:-translate-y-2 transition-transform duration-300 group relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-wine text-white text-xs font-bold px-3 py-1 rounded-bl-xl z-10">BEST</div>
+<div class="w-16 h-16 bg-wine/5 rounded-full flex items-center justify-center text-3xl mb-8 group-hover:bg-wine group-hover:text-white transition-colors relative z-10">
+                        💖
+                    </div>
+<h3 class="text-2xl font-bold mb-4 text-gray-900 relative z-10">힐링 일상 브이로그</h3>
+<p class="text-gray-500 mb-6 leading-relaxed relative z-10">
+                        보기만 해도 스트레스가 풀리는 사랑스러운 아이들의 일상. 꾸밈없는 순수한 모습과 감동적인 에피소드로 하루의 피로를 날려버리세요.
+                    </p>
+<ul class="space-y-3 text-sm font-medium text-gray-600 relative z-10">
+<li class="flex items-center gap-2"><span class="text-gold">✓</span> ASMR &amp; 먹방</li>
+<li class="flex items-center gap-2"><span class="text-gold">✓</span> 다견/다묘 가정 합사기</li>
+<li class="flex items-center gap-2"><span class="text-gold">✓</span> 펫 프렌들리 여행기</li>
+</ul>
+</div>
+<!-- Category 3 -->
+<div class="bg-white p-10 rounded-[2.5rem] shadow-sm border border-gray-100 hover:-translate-y-2 transition-transform duration-300 group">
+<div class="w-16 h-16 bg-wine/5 rounded-full flex items-center justify-center text-3xl mb-8 group-hover:bg-wine group-hover:text-white transition-colors">
+                        🩺
+                    </div>
+<h3 class="text-2xl font-bold mb-4 text-gray-900">건강 &amp; 케어 정보</h3>
+<p class="text-gray-500 mb-6 leading-relaxed">
+                        계절별 건강 관리부터 영양제 선택, 홈케어 방법론까지. 소중한 가족의 건강을 지키기 위한 핵심 정보들을 꼼꼼하게 리뷰하고 공유합니다.
+                    </p>
+<ul class="space-y-3 text-sm font-medium text-gray-600">
+<li class="flex items-center gap-2"><span class="text-gold">✓</span> 사료/간식 성분 분석</li>
+<li class="flex items-center gap-2"><span class="text-gold">✓</span> 셀프 미용 &amp; 위생 관리</li>
+<li class="flex items-center gap-2"><span class="text-gold">✓</span> 질병 예방 체크리스트</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-24 px-6 bg-white overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-3xl font-bold mb-12 text-center">구독자들의 생생한 후기</h2>
+<div class="flex gap-6 overflow-x-auto pb-8 snap-x -mx-6 px-6 no-scrollbar">
+<!-- Review 1 -->
+<div class="min-w-[320px] md:min-w-[400px] bg-gray-50 p-8 rounded-3xl snap-center border border-gray-100">
+<div class="flex text-gold mb-4 text-lg">★★★★★</div>
+<p class="text-gray-700 italic mb-6 leading-relaxed">"초보 집사라서 모르는 게 너무 많았는데, 여기 교육 영상 보고 우리 강아지 분리불안이 정말 많이 좋아졌어요! 매일 밤 영상 보는 게 제 힐링 루틴입니다."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-wine/20 rounded-full flex items-center justify-center text-wine font-bold">김</div>
+<div>
+<div class="font-bold text-gray-900">김*민 님</div>
+<div class="text-xs text-gray-500">구독 1년 차</div>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="min-w-[320px] md:min-w-[400px] bg-wine/5 p-8 rounded-3xl snap-center border border-wine/10">
+<div class="flex text-gold mb-4 text-lg">★★★★★</div>
+<p class="text-gray-700 italic mb-6 leading-relaxed">"편집이 너무 깔끔하고 영상미가 좋아요. 특히 건강 정보 리뷰는 광고 없이 진짜 성분만 꼼꼼히 따져주셔서 사료 고를 때 엄청 도움받고 있습니다. 최고!"</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-wine/20 rounded-full flex items-center justify-center text-wine font-bold">P</div>
+<div>
+<div class="font-bold text-gray-900">PetLover**</div>
+<div class="text-xs text-gray-500">구독 6개월 차</div>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="min-w-[320px] md:min-w-[400px] bg-gray-50 p-8 rounded-3xl snap-center border border-gray-100">
+<div class="flex text-gold mb-4 text-lg">★★★★★</div>
+<p class="text-gray-700 italic mb-6 leading-relaxed">"퇴근하고 지쳐있을 때 브이로그 영상 보면 진짜 마음이 사르르 녹아요. 우리 애기들 너무 귀엽고 주인분 목소리도 차분해서 듣기 편안해요."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-wine/20 rounded-full flex items-center justify-center text-wine font-bold">이</div>
+<div>
+<div class="font-bold text-gray-900">이*진 님</div>
+<div class="text-xs text-gray-500">구독 2년 차</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Video Section -->
+<section class="py-24 px-6 bg-gray-50">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+<div>
+<h2 class="text-3xl font-bold mb-2">가장 사랑받는 베스트 영상</h2>
+<p class="text-gray-500">조회수 100만 회를 돌파한 레전드 에피소드</p>
+</div>
+<a class="inline-flex items-center justify-center bg-white border border-gray-200 text-gray-700 px-6 py-2.5 rounded-full hover:bg-gray-50 transition-colors font-medium" href="#">
+                    전체 영상 보기 →
+                </a>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Video Cards (Simplified with placeholders for consistency) -->
+<div class="group cursor-pointer">
+<div class="relative aspect-video rounded-3xl overflow-hidden mb-5 shadow-sm group-hover:shadow-lg transition-all duration-300">
+<div class="absolute inset-0 bg-gray-200"></div>
+<!-- Using generic placeholder for thumbnails -->
+<div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1543466835-00a7907e9de1?q=80&amp;w=800&amp;auto=format&amp;fit=crop')] bg-cover bg-center"></div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+<div class="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded-md font-sans">12:45</div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-14 h-14 bg-wine/90 backdrop-blur rounded-full flex items-center justify-center text-white shadow-xl group-hover:scale-110 group-hover:bg-wine transition-all duration-300">
+<svg class="h-6 w-6 ml-1" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" fill-rule="evenodd"></path></svg>
+</div>
+</div>
+</div>
+<div class="flex gap-3">
+<div class="w-10 h-10 bg-gray-200 rounded-full flex-shrink-0 bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuA49VUiE7gy7wsFpJt-br7fMd_Laxz1M0ZVoS9_D6RnUS5tbohroL3Xi2Vi0od_yeCkPzsMWOx25iev_n3FPKF9sFrUrzPbSTLMWAEiLRLrucWdHsSqm1WSMXEAmSKSVvk9L4qM_4jDW2ir-ddjbAMNjIRt5ERyhOxt-Ln9bUmUiE_GItvOcNBm-2VDi9Vi3LpM2GJw1B8frtaTRxDEErCW6MyAQUu9mHRFjqLKa38flxSwUdgNhoSuSWkTSPynfaJ1IjrIRv5_znpi')] bg-cover"></div>
+<div>
+<h4 class="font-bold text-gray-900 line-clamp-2 leading-snug group-hover:text-wine transition-colors mb-1">강아지가 화났을 때 하는 행동 5가지 (이럴 땐 조심하세요!)</h4>
+<div class="text-sm text-gray-500 flex items-center gap-2">
+<span>힐링펫라이프</span>
+<span>•</span>
+<span>조회수 125만회</span>
+</div>
+</div>
+</div>
+</div>
+<div class="group cursor-pointer">
+<div class="relative aspect-video rounded-3xl overflow-hidden mb-5 shadow-sm group-hover:shadow-lg transition-all duration-300">
+<div class="absolute inset-0 bg-gray-200"></div>
+<div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&amp;w=800&amp;auto=format&amp;fit=crop')] bg-cover bg-center"></div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+<div class="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded-md font-sans">08:20</div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-14 h-14 bg-wine/90 backdrop-blur rounded-full flex items-center justify-center text-white shadow-xl group-hover:scale-110 group-hover:bg-wine transition-all duration-300">
+<svg class="h-6 w-6 ml-1" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" fill-rule="evenodd"></path></svg>
+</div>
+</div>
+</div>
+<div class="flex gap-3">
+<div class="w-10 h-10 bg-gray-200 rounded-full flex-shrink-0 bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuA49VUiE7gy7wsFpJt-br7fMd_Laxz1M0ZVoS9_D6RnUS5tbohroL3Xi2Vi0od_yeCkPzsMWOx25iev_n3FPKF9sFrUrzPbSTLMWAEiLRLrucWdHsSqm1WSMXEAmSKSVvk9L4qM_4jDW2ir-ddjbAMNjIRt5ERyhOxt-Ln9bUmUiE_GItvOcNBm-2VDi9Vi3LpM2GJw1B8frtaTRxDEErCW6MyAQUu9mHRFjqLKa38flxSwUdgNhoSuSWkTSPynfaJ1IjrIRv5_znpi')] bg-cover"></div>
+<div>
+<h4 class="font-bold text-gray-900 line-clamp-2 leading-snug group-hover:text-wine transition-colors mb-1">고양이가 100% 만족하는 기적의 골골송 마사지법 공개</h4>
+<div class="text-sm text-gray-500 flex items-center gap-2">
+<span>힐링펫라이프</span>
+<span>•</span>
+<span>조회수 98만회</span>
+</div>
+</div>
+</div>
+</div>
+<div class="group cursor-pointer">
+<div class="relative aspect-video rounded-3xl overflow-hidden mb-5 shadow-sm group-hover:shadow-lg transition-all duration-300">
+<div class="absolute inset-0 bg-gray-200"></div>
+<div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&amp;w=800&amp;auto=format&amp;fit=crop')] bg-cover bg-center"></div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+<div class="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded-md font-sans">15:10</div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-14 h-14 bg-wine/90 backdrop-blur rounded-full flex items-center justify-center text-white shadow-xl group-hover:scale-110 group-hover:bg-wine transition-all duration-300">
+<svg class="h-6 w-6 ml-1" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" fill-rule="evenodd"></path></svg>
+</div>
+</div>
+</div>
+<div class="flex gap-3">
+<div class="w-10 h-10 bg-gray-200 rounded-full flex-shrink-0 bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuA49VUiE7gy7wsFpJt-br7fMd_Laxz1M0ZVoS9_D6RnUS5tbohroL3Xi2Vi0od_yeCkPzsMWOx25iev_n3FPKF9sFrUrzPbSTLMWAEiLRLrucWdHsSqm1WSMXEAmSKSVvk9L4qM_4jDW2ir-ddjbAMNjIRt5ERyhOxt-Ln9bUmUiE_GItvOcNBm-2VDi9Vi3LpM2GJw1B8frtaTRxDEErCW6MyAQUu9mHRFjqLKa38flxSwUdgNhoSuSWkTSPynfaJ1IjrIRv5_znpi')] bg-cover"></div>
+<div>
+<h4 class="font-bold text-gray-900 line-clamp-2 leading-snug group-hover:text-wine transition-colors mb-1">새로운 친구를 만난 날, 우당탕탕 첫 합사 일기 VLOG</h4>
+<div class="text-sm text-gray-500 flex items-center gap-2">
+<span>힐링펫라이프</span>
+<span>•</span>
+<span>조회수 85만회</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-24 px-6 bg-white" id="faq">
+<div class="max-w-3xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold mb-4">자주 묻는 질문</h2>
+<p class="text-gray-500">구독자분들이 가장 궁금해하시는 내용들을 모았습니다.</p>
+</div>
+<div class="space-y-4">
+<!-- FAQ Item 1 -->
+<div class="border border-gray-200 rounded-2xl p-6 hover:border-wine/30 transition-colors">
+<h3 class="text-lg font-bold text-gray-900 mb-2 flex justify-between items-center cursor-pointer">
+                        Q. 영상 업로드 주기가 어떻게 되나요?
+                        <span class="text-wine">↓</span>
+</h3>
+<p class="text-gray-600 mt-4 leading-relaxed">
+                        A. 정규 영상은 매주 화요일과 금요일 저녁 8시에 업로드됩니다. 짧은 숏츠(Shorts) 영상은 주 3~4회 게릴라로 업로드되며, 커뮤니티 탭을 통해 미리 공지해 드리고 있습니다.
+                    </p>
+</div>
+<!-- FAQ Item 2 -->
+<div class="border border-gray-200 rounded-2xl p-6 hover:border-wine/30 transition-colors">
+<h3 class="text-lg font-bold text-gray-900 mb-2 flex justify-between items-center cursor-pointer">
+                        Q. 영상에 나오는 제품 정보는 어디서 볼 수 있나요?
+                        <span class="text-wine">↓</span>
+</h3>
+<p class="text-gray-600 mt-4 leading-relaxed">
+                        A. 영상 설명란(더보기)에 항상 타임라인과 함께 사용된 제품의 이름 및 링크를 정리해 두고 있습니다. 궁금한 점이 있으시다면 댓글로 남겨주시면 친절히 답변해 드립니다!
+                    </p>
+</div>
+<!-- FAQ Item 3 -->
+<div class="border border-gray-200 rounded-2xl p-6 hover:border-wine/30 transition-colors">
+<h3 class="text-lg font-bold text-gray-900 mb-2 flex justify-between items-center cursor-pointer">
+                        Q. 저희 집 아이 사연이나 고민도 상담받을 수 있나요?
+                        <span class="text-wine">↓</span>
+</h3>
+<p class="text-gray-600 mt-4 leading-relaxed">
+                        A. 네! 한 달에 한 번 구독자 소통 라이브 방송을 통해 Q&amp;A 시간을 가집니다. 또한 커뮤니티 게시판이나 공식 이메일을 통해 사연을 제보해주시면, 전문가 자문을 거쳐 '솔루션 영상'으로 다루기도 합니다.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer CTA -->
+<section class="py-20 px-6 bg-white">
+<div class="max-w-5xl mx-auto wine-gradient rounded-[3rem] p-12 md:p-20 text-center text-white relative overflow-hidden shadow-2xl">
+<div class="absolute top-0 right-0 w-96 h-96 bg-gold/20 blur-[100px] rounded-full -mr-32 -mt-32 mix-blend-screen"></div>
+<div class="absolute bottom-0 left-0 w-96 h-96 bg-white/10 blur-[80px] rounded-full -ml-32 -mb-32"></div>
+<div class="relative z-10 space-y-8">
+<div class="inline-block p-4 bg-white/10 backdrop-blur rounded-full mb-2">
+<span class="text-4xl">🎁</span>
+</div>
+<h2 class="text-3xl md:text-5xl font-bold leading-tight">
+                    지금 바로 구독하고<br/>
+<span class="text-gold">우리 아이와 더 가까워지세요</span>
+</h2>
+<p class="text-white/90 max-w-lg mx-auto text-lg font-medium">
+                    매주 업데이트되는 따뜻한 이야기와 유용한 정보.<br/>구독자 전용 이벤트와 혜택도 놓치지 마세요!
+                </p>
+<div class="pt-4">
+<button class="bg-white text-wine px-12 py-5 rounded-full font-bold text-xl hover:bg-gray-50 hover:scale-105 transition-all shadow-xl flex items-center gap-3 mx-auto">
+<span class="animate-bounce">🔔</span> 채널 구독하기
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-300 py-16 px-6">
+<div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 border-b border-gray-800 pb-12 mb-8">
+<div class="md:col-span-2">
+<div class="text-2xl font-bold text-white flex items-center gap-2 mb-6">
+<span class="text-wine">🐾</span> Healing Pet Life
+                </div>
+<p class="text-gray-400 mb-6 max-w-sm leading-relaxed">
+                    반려동물과의 평범한 일상을 특별한 순간으로 만들어가는 공간입니다. 건강하고 행복한 반려문화를 선도합니다.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-wine hover:text-white transition-colors" href="#">YT</a>
+<a class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-wine hover:text-white transition-colors" href="#">IG</a>
+<a class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-wine hover:text-white transition-colors" href="#">TK</a>
+</div>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 text-lg">Quick Links</h4>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-gold transition-colors" href="#">홈페이지</a></li>
+<li><a class="hover:text-gold transition-colors" href="#categories">콘텐츠 카테고리</a></li>
+<li><a class="hover:text-gold transition-colors" href="#faq">자주 묻는 질문</a></li>
+<li><a class="hover:text-gold transition-colors" href="#">비즈니스 문의</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 text-lg">Contact Us</h4>
+<ul class="space-y-4 text-sm">
+<li class="flex items-center gap-2">
+<span class="text-gray-500">📧</span> contact@healingpet.tv
+                    </li>
+<li class="flex items-center gap-2">
+<span class="text-gray-500">🤝</span> 파트너십/제휴 문의
+                    </li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+<div>
+                © 2024 Healing Pet Life (힐링펫라이프). All rights reserved.
+            </div>
+<div class="flex gap-6">
+<a class="hover:text-white transition-colors" href="#">이용약관</a>
+<a class="hover:text-white transition-colors" href="#">개인정보처리방침</a>
+</div>
+</div>
+</footer>
+</body></html>
